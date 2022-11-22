@@ -1,21 +1,16 @@
 ---
-const githubPlatform = "github";
-const linkedInPlatform = "linkedin";
-const githubUsername = "AnujDynamite";
-const linkedinUsername = "anujdyamanna";
+import Social from "./Social.astro";
 ---
 
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
 <footer>
-  <p>
-    Learn more about my projects on <a
-      href={`https://www.${githubPlatform}.com/${githubUsername}`}
-      >{githubPlatform}</a
-    >!
-  </p>
-  <p>
-    Also my Linkedin is here <a
-      href={`https://www.${linkedInPlatform}.com/in/${linkedinUsername}`}
-      >{linkedInPlatform}</a
-    >!
-  </p>
+  <Social platform="github" username="AnujDynamite" />
+  <Social platform="linkedin" username="in/anujdyamanna" />
 </footer>
