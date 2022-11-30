@@ -6,7 +6,7 @@ description: "I had some challenges, but asking in the community really helped!"
 image:
   url: "https://astro.build/assets/blog/community-day/cover.jpg"
   alt: "The word community with a heart."
-pubDate: "24th November 2022"
+pubDate: 2022-11-25
 tags: ["community"]
 ---
 

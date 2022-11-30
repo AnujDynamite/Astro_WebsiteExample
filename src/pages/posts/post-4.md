@@ -6,6 +6,6 @@ description: "This post will show up on its own!"
 image:
   url: "https://astro.build/assets/hero_NkT0b.avif"
   alt: "Earth seen from space."
-pubDate: 2022-08-08
+pubDate: 2022-11-26
 tags: ["successes"]
 ---

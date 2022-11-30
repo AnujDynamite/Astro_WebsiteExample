@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "My First Blog Post"
-pubDate: "24th November 2022"
-description: "Welcome to my new blog about learning Astro! Here, I will share my learning journey as I build a new website."
 author: "Anuj Dyamanna"
+description: "Welcome to my new blog about learning Astro! Here, I will share my learning journey as I build a new website."
 image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
   alt: "The Astro logo with the word One."
+pubDate: 2022-11-25
 tags: ["intro"]
 ---
 
