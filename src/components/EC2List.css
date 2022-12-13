@@ -1,0 +1,17 @@
+table {
+  border: 1px solid green;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid green;
+}
+
+.vpc {
+  border: 5px solid salmon;
+}
+
+#keypair {
+  border: 2px dotted blue
+}

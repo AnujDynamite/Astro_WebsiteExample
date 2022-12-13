@@ -1,6 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting.jsx";
+import Hello from "../components/Hello.jsx";
+import TimeComponent from "../components/TimeComponent.jsx";
+import AbilityComponent from "../components/AbilityComponent.jsx";
+import MyList from "../components/NineNov.jsx";
+import PokemonList from "../components/PokemonList.jsx";
 const pageTitle = "Home Page";
 ---
 
@@ -9,5 +14,10 @@ const pageTitle = "Home Page";
   <h2>Welcome back to Lumbridge!</h2>
   <!--client:load tells Astro to send and rerun the Javascript to the client when the page loads, making the component interactive.
   This is also known as a hydrated component.  -->
-  <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+  <!---<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} /> --->
+  <Hello client:only="react" />
+  <TimeComponent client:only="react" />
+  <AbilityComponent client:only="react" />
+  <PokemonList client:only="react" />
+  <!-- <MyList client:only="react" color="blue"><b>Blah</b></MyList> -->
 </BaseLayout>
