@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import "./EC2List.css"
+import React, { useState, useEffect } from 'react';
+import "../styles/EC2List.css";
+
 export default function EC2List() {
   const [listOfInstances, setListOfInstances] = useState([])
 

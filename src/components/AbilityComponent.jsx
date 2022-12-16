@@ -25,21 +25,22 @@ export default function AbilityComponent() {
   }
 
   return (
-    <div>
+    <div align="center">
       {/* Form is used to display a text box to type/input something in. onSubmit will send the input into a function.
       <input /> is where you input the string itself into on the website, placeholder is a default text in the text box
       when the website is first loaded. In this case I have chosen to link the form to 'button type="submit"'
       The (e) represents an event that should take place (further clarification needed) */}
       <form onSubmit={(e) => submitForm(e)}>
-        <input value={abilityInputBox} placeholder="Set Ability Here..."  onChange={(e) => changeInputBox(e)}/>
-        <button type="submit">Show Ability</button>
+        <input value={abilityInputBox} className=" text-black " placeholder="Set Ability Here..." onChange={(e) => changeInputBox(e)} />
+        <span className='px-2'></span>
+        <button className='bg-blue-500 hover:bg-blue-800 hover:underline rounded px-4 py-2' type="submit">Show Ability</button>
       </form>
       {/* Here we check my database if there are any Pokemon with the ability that was typed into the text box.
       Left side of the : is true, while right side of the : is false, in which case all pokemon in the database with
       the ability typed in the text box will be displayed on the website when the Show Ability button is clicked.
       The resulting data is shown in a table format here */}
       {listOfAbility.length == 0 ? <b>No Ability by that name...</b> : <b>Pokemon with {abilityInputBox}</b>}
-      <table>
+      <table style={{ "textAlign": "center" }}>
         <thead>
           <tr>
             <th>Pokedex No#</th>

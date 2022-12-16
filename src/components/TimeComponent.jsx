@@ -5,7 +5,8 @@ export default function TimeComponent() {
 
   const loadData = async () => {
     try {
-      let response = await fetch('http://worldtimeapi.org/api/timezone/Pacific/Auckland');
+      // let response = await fetch('http://worldtimeapi.org/api/timezone/Pacific/Auckland');
+      let response = await fetch('http://localhost:8000/epochtime');
       const json = await response.json();
       const newTime = json['unixtime'];
       setTime(newTime);
